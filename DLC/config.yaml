@@ -1,0 +1,93 @@
+    # Project definitions (do not edit)
+Task: car_wash_small_marker
+scorer: raimasen
+date: Jan11
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: /content/drive/My Drive/DLC
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /Users/raimasen/Desktop/RA/car_wash_standard_dlc/car_wash_small_marker-raimasen-2022-01-11/videos/Washing_car_trimmed.mp4:
+    crop: 0, 640, 0, 480
+bodyparts:
+- p_left_wrist
+- p_right_wrist
+- p_left_elbow
+- p_right_elbow
+- p_left_shoulder
+- p_right_shoulder
+- p_neck
+- p_waist
+- t_left_wrist
+- t_right_wrist
+- t_left_elbow
+- t_right_elbow
+- t_left_shoulder
+- t_right_shoulder
+- t_neck
+- t_waist
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - p_neck
+  - p_left_shoulder
+- - p_neck
+  - p_right_shoulder
+- - p_left_shoulder
+  - p_left_elbow
+- - p_right_shoulder
+  - p_right_elbow
+- - p_left_elbow
+  - p_left_wrist
+- - p_right_elbow
+  - p_right_wrist
+- - p_neck
+  - p_waist
+- - t_neck
+  - t_left_shoulder
+- - t_neck
+  - t_right_shoulder
+- - t_left_shoulder
+  - t_left_elbow
+- - t_right_shoulder
+  - t_right_elbow
+- - t_left_elbow
+  - t_left_wrist
+- - t_right_elbow
+  - t_right_wrist
+- - t_neck
+  - t_waist
+skeleton_color: black
+pcutoff: 0.8
+dotsize: 7
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true

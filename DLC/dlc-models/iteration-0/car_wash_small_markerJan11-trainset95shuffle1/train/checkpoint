@@ -1,0 +1,6 @@
+model_checkpoint_path: "/content/drive/My Drive/DLC/dlc-models/iteration-0/car_wash_small_markerJan11-trainset95shuffle1/train/snapshot-13000"
+all_model_checkpoint_paths: "/content/drive/My Drive/DLC/dlc-models/iteration-0/car_wash_small_markerJan11-trainset95shuffle1/train/snapshot-11000"
+all_model_checkpoint_paths: "/content/drive/My Drive/DLC/dlc-models/iteration-0/car_wash_small_markerJan11-trainset95shuffle1/train/snapshot-11500"
+all_model_checkpoint_paths: "/content/drive/My Drive/DLC/dlc-models/iteration-0/car_wash_small_markerJan11-trainset95shuffle1/train/snapshot-12000"
+all_model_checkpoint_paths: "/content/drive/My Drive/DLC/dlc-models/iteration-0/car_wash_small_markerJan11-trainset95shuffle1/train/snapshot-12500"
+all_model_checkpoint_paths: "/content/drive/My Drive/DLC/dlc-models/iteration-0/car_wash_small_markerJan11-trainset95shuffle1/train/snapshot-13000"

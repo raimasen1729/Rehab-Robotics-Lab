@@ -1,0 +1,105 @@
+    # Project definitions (do not edit)
+Task: sweeping_small_markers
+scorer: raimasen
+date: Jan16
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: /content/drive/My Drive/sweeping
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /Users/raimasen/Desktop/RA/sweeping/sweeping_small_markers-raimasen-2022-01-16/videos/sweeping_trimmed_1.mp4:
+    crop: 0, 640, 0, 480
+bodyparts:
+- p_left_wrist
+- p_right_wrist
+- p_left_elbow
+- p_right_elbow
+- p_left_shoulder
+- p_right_shoulder
+- p_neck
+- p_waist
+- p_left_leg
+- p_right_leg
+- t_left_wrist
+- t_right_wrist
+- t_left_elbow
+- t_right_elbow
+- t_left_shoulder
+- t_right_shoulder
+- t_neck
+- t_waist
+- t_left_leg
+- t_right_leg
+start: 0
+stop: 1
+numframes2pick: 20
+
+    # Plotting configuration
+skeleton:
+- - p_neck
+  - p_left_shoulder
+- - p_neck
+  - p_right_shoulder
+- - p_left_shoulder
+  - p_left_elbow
+- - p_right_shoulder
+  - p_right_elbow
+- - p_left_elbow
+  - p_left_wrist
+- - p_right_elbow
+  - p_right_wrist
+- - p_neck
+  - p_waist
+- - p_waist
+  - p_left_leg
+- - p_waist
+  - p_right_leg
+- - t_neck
+  - t_left_shoulder
+- - t_neck
+  - t_right_shoulder
+- - t_left_shoulder
+  - t_left_elbow
+- - t_right_shoulder
+  - t_right_elbow
+- - t_left_elbow
+  - t_left_wrist
+- - t_right_elbow
+  - t_right_wrist
+- - t_neck
+  - t_waist
+- - t_waist
+  - t_left_leg
+- - t_waist
+  - t_right_leg
+skeleton_color: black
+pcutoff: 0.1
+dotsize: 7
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true

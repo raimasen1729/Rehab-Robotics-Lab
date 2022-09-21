@@ -1,0 +1,33 @@
+all_joints:
+- [0]
+- [1]
+- [2]
+- [3]
+- [4]
+- [5]
+- [6]
+- [7]
+- [8]
+- [9]
+- [10]
+- [11]
+- [12]
+- [13]
+- [14]
+- [15]
+- [16]
+- [17]
+- [18]
+- [19]
+all_joints_names: [p_left_wrist, p_right_wrist, p_left_elbow, p_right_elbow, p_left_shoulder,
+  p_right_shoulder, p_neck, p_waist, p_left_leg, p_right_leg, t_left_wrist, t_right_wrist,
+  t_left_elbow, t_right_elbow, t_left_shoulder, t_right_shoulder, t_neck, t_waist,
+  t_left_leg, t_right_leg]
+dataset: training-datasets/iteration-0/UnaugmentedDataSet_sweeping_small_markersJan16/sweeping_small_markers_raimasen95shuffle1.mat
+global_scale: 0.8
+init_weights: /usr/local/lib/python3.7/dist-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt
+location_refinement: true
+locref_stdev: 7.2801
+net_type: resnet_50
+num_joints: 20
+scoremap_dir: test

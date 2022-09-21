@@ -1,0 +1,746 @@
+2022-03-07 19:15:18 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15]],
+ 'all_joints_names': ['p_left_wrist',
+                      'p_right_wrist',
+                      'p_left_elbow',
+                      'p_right_elbow',
+                      'p_left_shoulder',
+                      'p_right_shoulder',
+                      'p_neck',
+                      'p_waist',
+                      't_left_wrist',
+                      't_right_wrist',
+                      't_left_elbow',
+                      't_right_elbow',
+                      't_left_shoulder',
+                      't_right_shoulder',
+                      't_neck',
+                      't_waist'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'crop_sampling': 'hybrid',
+ 'crop_size': [400, 400],
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_car_wash_small_markerJan11/car_wash_small_marker_raimasen95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': '/usr/local/lib/python3.7/dist-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'max_shift': 0.4,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_car_wash_small_markerJan11/Documentation_data-car_wash_small_marker_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 16,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'pre_resize': [],
+ 'project_path': '/content/drive/My Drive/DLC',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': '/content/drive/My '
+                    'Drive/DLC/dlc-models/iteration-0/car_wash_small_markerJan11-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-03-07 19:16:07 iteration: 10 loss: 0.4779 lr: 0.005
+2022-03-07 19:16:26 iteration: 20 loss: 0.0627 lr: 0.005
+2022-03-07 19:16:42 iteration: 30 loss: 0.0453 lr: 0.005
+2022-03-07 19:16:59 iteration: 40 loss: 0.0391 lr: 0.005
+2022-03-07 19:17:07 iteration: 50 loss: 0.0342 lr: 0.005
+2022-03-07 19:17:15 iteration: 60 loss: 0.0374 lr: 0.005
+2022-03-07 19:17:26 iteration: 70 loss: 0.0384 lr: 0.005
+2022-03-07 19:17:32 iteration: 80 loss: 0.0316 lr: 0.005
+2022-03-07 19:17:37 iteration: 90 loss: 0.0321 lr: 0.005
+2022-03-07 19:17:48 iteration: 100 loss: 0.0341 lr: 0.005
+2022-03-07 19:17:52 iteration: 110 loss: 0.0347 lr: 0.005
+2022-03-07 19:18:00 iteration: 120 loss: 0.0341 lr: 0.005
+2022-03-07 19:18:06 iteration: 130 loss: 0.0331 lr: 0.005
+2022-03-07 19:18:14 iteration: 140 loss: 0.0351 lr: 0.005
+2022-03-07 19:18:19 iteration: 150 loss: 0.0330 lr: 0.005
+2022-03-07 19:18:27 iteration: 160 loss: 0.0314 lr: 0.005
+2022-03-07 19:18:33 iteration: 170 loss: 0.0352 lr: 0.005
+2022-03-07 19:18:39 iteration: 180 loss: 0.0349 lr: 0.005
+2022-03-07 19:18:43 iteration: 190 loss: 0.0263 lr: 0.005
+2022-03-07 19:18:47 iteration: 200 loss: 0.0296 lr: 0.005
+2022-03-07 19:18:50 iteration: 210 loss: 0.0305 lr: 0.005
+2022-03-07 19:18:55 iteration: 220 loss: 0.0302 lr: 0.005
+2022-03-07 19:19:00 iteration: 230 loss: 0.0323 lr: 0.005
+2022-03-07 19:19:03 iteration: 240 loss: 0.0280 lr: 0.005
+2022-03-07 19:19:07 iteration: 250 loss: 0.0344 lr: 0.005
+2022-03-07 19:19:10 iteration: 260 loss: 0.0309 lr: 0.005
+2022-03-07 19:19:13 iteration: 270 loss: 0.0288 lr: 0.005
+2022-03-07 19:19:17 iteration: 280 loss: 0.0271 lr: 0.005
+2022-03-07 19:19:22 iteration: 290 loss: 0.0304 lr: 0.005
+2022-03-07 19:19:25 iteration: 300 loss: 0.0302 lr: 0.005
+2022-03-07 19:19:30 iteration: 310 loss: 0.0276 lr: 0.005
+2022-03-07 19:19:33 iteration: 320 loss: 0.0284 lr: 0.005
+2022-03-07 19:19:35 iteration: 330 loss: 0.0290 lr: 0.005
+2022-03-07 19:19:39 iteration: 340 loss: 0.0279 lr: 0.005
+2022-03-07 19:19:41 iteration: 350 loss: 0.0292 lr: 0.005
+2022-03-07 19:19:44 iteration: 360 loss: 0.0308 lr: 0.005
+2022-03-07 19:19:46 iteration: 370 loss: 0.0274 lr: 0.005
+2022-03-07 19:19:49 iteration: 380 loss: 0.0291 lr: 0.005
+2022-03-07 19:19:52 iteration: 390 loss: 0.0356 lr: 0.005
+2022-03-07 19:19:56 iteration: 400 loss: 0.0274 lr: 0.005
+2022-03-07 19:19:59 iteration: 410 loss: 0.0302 lr: 0.005
+2022-03-07 19:20:02 iteration: 420 loss: 0.0315 lr: 0.005
+2022-03-07 19:20:05 iteration: 430 loss: 0.0303 lr: 0.005
+2022-03-07 19:20:08 iteration: 440 loss: 0.0297 lr: 0.005
+2022-03-07 19:20:10 iteration: 450 loss: 0.0254 lr: 0.005
+2022-03-07 19:20:13 iteration: 460 loss: 0.0273 lr: 0.005
+2022-03-07 19:20:15 iteration: 470 loss: 0.0310 lr: 0.005
+2022-03-07 19:20:18 iteration: 480 loss: 0.0286 lr: 0.005
+2022-03-07 19:20:21 iteration: 490 loss: 0.0302 lr: 0.005
+2022-03-07 19:20:24 iteration: 500 loss: 0.0271 lr: 0.005
+2022-03-07 19:20:27 iteration: 510 loss: 0.0237 lr: 0.005
+2022-03-07 19:20:29 iteration: 520 loss: 0.0300 lr: 0.005
+2022-03-07 19:20:32 iteration: 530 loss: 0.0280 lr: 0.005
+2022-03-07 19:20:35 iteration: 540 loss: 0.0291 lr: 0.005
+2022-03-07 19:20:37 iteration: 550 loss: 0.0259 lr: 0.005
+2022-03-07 19:20:40 iteration: 560 loss: 0.0267 lr: 0.005
+2022-03-07 19:20:43 iteration: 570 loss: 0.0282 lr: 0.005
+2022-03-07 19:20:46 iteration: 580 loss: 0.0247 lr: 0.005
+2022-03-07 19:20:48 iteration: 590 loss: 0.0260 lr: 0.005
+2022-03-07 19:20:50 iteration: 600 loss: 0.0275 lr: 0.005
+2022-03-07 19:20:53 iteration: 610 loss: 0.0276 lr: 0.005
+2022-03-07 19:20:55 iteration: 620 loss: 0.0269 lr: 0.005
+2022-03-07 19:20:58 iteration: 630 loss: 0.0264 lr: 0.005
+2022-03-07 19:21:00 iteration: 640 loss: 0.0276 lr: 0.005
+2022-03-07 19:21:03 iteration: 650 loss: 0.0267 lr: 0.005
+2022-03-07 19:21:05 iteration: 660 loss: 0.0283 lr: 0.005
+2022-03-07 19:21:08 iteration: 670 loss: 0.0286 lr: 0.005
+2022-03-07 19:21:12 iteration: 680 loss: 0.0257 lr: 0.005
+2022-03-07 19:21:14 iteration: 690 loss: 0.0247 lr: 0.005
+2022-03-07 19:21:16 iteration: 700 loss: 0.0260 lr: 0.005
+2022-03-07 19:21:19 iteration: 710 loss: 0.0256 lr: 0.005
+2022-03-07 19:21:22 iteration: 720 loss: 0.0242 lr: 0.005
+2022-03-07 19:21:24 iteration: 730 loss: 0.0233 lr: 0.005
+2022-03-07 19:21:26 iteration: 740 loss: 0.0258 lr: 0.005
+2022-03-07 19:21:29 iteration: 750 loss: 0.0254 lr: 0.005
+2022-03-07 19:21:31 iteration: 760 loss: 0.0250 lr: 0.005
+2022-03-07 19:21:34 iteration: 770 loss: 0.0258 lr: 0.005
+2022-03-07 19:21:36 iteration: 780 loss: 0.0230 lr: 0.005
+2022-03-07 19:21:38 iteration: 790 loss: 0.0228 lr: 0.005
+2022-03-07 19:21:40 iteration: 800 loss: 0.0232 lr: 0.005
+2022-03-07 19:21:43 iteration: 810 loss: 0.0268 lr: 0.005
+2022-03-07 19:21:46 iteration: 820 loss: 0.0240 lr: 0.005
+2022-03-07 19:21:48 iteration: 830 loss: 0.0247 lr: 0.005
+2022-03-07 19:21:51 iteration: 840 loss: 0.0257 lr: 0.005
+2022-03-07 19:21:53 iteration: 850 loss: 0.0228 lr: 0.005
+2022-03-07 19:21:55 iteration: 860 loss: 0.0259 lr: 0.005
+2022-03-07 19:21:58 iteration: 870 loss: 0.0234 lr: 0.005
+2022-03-07 19:22:00 iteration: 880 loss: 0.0231 lr: 0.005
+2022-03-07 19:22:03 iteration: 890 loss: 0.0252 lr: 0.005
+2022-03-07 19:22:05 iteration: 900 loss: 0.0239 lr: 0.005
+2022-03-07 19:22:08 iteration: 910 loss: 0.0231 lr: 0.005
+2022-03-07 19:22:10 iteration: 920 loss: 0.0276 lr: 0.005
+2022-03-07 19:22:13 iteration: 930 loss: 0.0229 lr: 0.005
+2022-03-07 19:22:15 iteration: 940 loss: 0.0220 lr: 0.005
+2022-03-07 19:22:17 iteration: 950 loss: 0.0245 lr: 0.005
+2022-03-07 19:22:20 iteration: 960 loss: 0.0230 lr: 0.005
+2022-03-07 19:22:22 iteration: 970 loss: 0.0228 lr: 0.005
+2022-03-07 19:22:24 iteration: 980 loss: 0.0204 lr: 0.005
+2022-03-07 19:22:27 iteration: 990 loss: 0.0214 lr: 0.005
+2022-03-07 19:22:29 iteration: 1000 loss: 0.0246 lr: 0.005
+2022-03-07 19:22:32 iteration: 1010 loss: 0.0226 lr: 0.005
+2022-03-07 19:22:34 iteration: 1020 loss: 0.0214 lr: 0.005
+2022-03-07 19:22:37 iteration: 1030 loss: 0.0237 lr: 0.005
+2022-03-07 19:22:39 iteration: 1040 loss: 0.0221 lr: 0.005
+2022-03-07 19:22:41 iteration: 1050 loss: 0.0234 lr: 0.005
+2022-03-07 19:22:43 iteration: 1060 loss: 0.0197 lr: 0.005
+2022-03-07 19:22:45 iteration: 1070 loss: 0.0212 lr: 0.005
+2022-03-07 19:22:48 iteration: 1080 loss: 0.0240 lr: 0.005
+2022-03-07 19:22:50 iteration: 1090 loss: 0.0209 lr: 0.005
+2022-03-07 19:22:52 iteration: 1100 loss: 0.0218 lr: 0.005
+2022-03-07 19:22:55 iteration: 1110 loss: 0.0204 lr: 0.005
+2022-03-07 19:22:57 iteration: 1120 loss: 0.0192 lr: 0.005
+2022-03-07 19:22:58 iteration: 1130 loss: 0.0190 lr: 0.005
+2022-03-07 19:23:01 iteration: 1140 loss: 0.0245 lr: 0.005
+2022-03-07 19:23:04 iteration: 1150 loss: 0.0199 lr: 0.005
+2022-03-07 19:23:06 iteration: 1160 loss: 0.0202 lr: 0.005
+2022-03-07 19:23:08 iteration: 1170 loss: 0.0222 lr: 0.005
+2022-03-07 19:23:11 iteration: 1180 loss: 0.0193 lr: 0.005
+2022-03-07 19:23:13 iteration: 1190 loss: 0.0205 lr: 0.005
+2022-03-07 19:23:16 iteration: 1200 loss: 0.0213 lr: 0.005
+2022-03-07 19:23:19 iteration: 1210 loss: 0.0225 lr: 0.005
+2022-03-07 19:23:21 iteration: 1220 loss: 0.0202 lr: 0.005
+2022-03-07 19:23:23 iteration: 1230 loss: 0.0214 lr: 0.005
+2022-03-07 19:23:26 iteration: 1240 loss: 0.0199 lr: 0.005
+2022-03-07 19:23:28 iteration: 1250 loss: 0.0201 lr: 0.005
+2022-03-07 19:23:30 iteration: 1260 loss: 0.0205 lr: 0.005
+2022-03-07 19:23:33 iteration: 1270 loss: 0.0209 lr: 0.005
+2022-03-07 19:23:34 iteration: 1280 loss: 0.0186 lr: 0.005
+2022-03-07 19:23:37 iteration: 1290 loss: 0.0206 lr: 0.005
+2022-03-07 19:23:39 iteration: 1300 loss: 0.0208 lr: 0.005
+2022-03-07 19:23:41 iteration: 1310 loss: 0.0225 lr: 0.005
+2022-03-07 19:23:44 iteration: 1320 loss: 0.0195 lr: 0.005
+2022-03-07 19:23:46 iteration: 1330 loss: 0.0181 lr: 0.005
+2022-03-07 19:23:48 iteration: 1340 loss: 0.0210 lr: 0.005
+2022-03-07 19:23:51 iteration: 1350 loss: 0.0206 lr: 0.005
+2022-03-07 19:23:53 iteration: 1360 loss: 0.0205 lr: 0.005
+2022-03-07 19:23:56 iteration: 1370 loss: 0.0222 lr: 0.005
+2022-03-07 19:23:58 iteration: 1380 loss: 0.0212 lr: 0.005
+2022-03-07 19:24:01 iteration: 1390 loss: 0.0196 lr: 0.005
+2022-03-07 19:24:03 iteration: 1400 loss: 0.0218 lr: 0.005
+2022-03-07 19:24:05 iteration: 1410 loss: 0.0196 lr: 0.005
+2022-03-07 19:24:08 iteration: 1420 loss: 0.0202 lr: 0.005
+2022-03-07 19:24:11 iteration: 1430 loss: 0.0218 lr: 0.005
+2022-03-07 19:24:13 iteration: 1440 loss: 0.0179 lr: 0.005
+2022-03-07 19:24:15 iteration: 1450 loss: 0.0169 lr: 0.005
+2022-03-07 19:24:17 iteration: 1460 loss: 0.0191 lr: 0.005
+2022-03-07 19:24:20 iteration: 1470 loss: 0.0208 lr: 0.005
+2022-03-07 19:24:22 iteration: 1480 loss: 0.0214 lr: 0.005
+2022-03-07 19:24:24 iteration: 1490 loss: 0.0186 lr: 0.005
+2022-03-07 19:24:27 iteration: 1500 loss: 0.0199 lr: 0.005
+2022-03-07 19:24:29 iteration: 1510 loss: 0.0154 lr: 0.005
+2022-03-07 19:24:31 iteration: 1520 loss: 0.0194 lr: 0.005
+2022-03-07 19:24:34 iteration: 1530 loss: 0.0180 lr: 0.005
+2022-03-07 19:24:36 iteration: 1540 loss: 0.0198 lr: 0.005
+2022-03-07 19:24:38 iteration: 1550 loss: 0.0194 lr: 0.005
+2022-03-07 19:24:41 iteration: 1560 loss: 0.0195 lr: 0.005
+2022-03-07 19:24:43 iteration: 1570 loss: 0.0193 lr: 0.005
+2022-03-07 19:24:45 iteration: 1580 loss: 0.0173 lr: 0.005
+2022-03-07 19:24:47 iteration: 1590 loss: 0.0206 lr: 0.005
+2022-03-07 19:24:50 iteration: 1600 loss: 0.0191 lr: 0.005
+2022-03-07 19:24:52 iteration: 1610 loss: 0.0189 lr: 0.005
+2022-03-07 19:24:55 iteration: 1620 loss: 0.0188 lr: 0.005
+2022-03-07 19:24:57 iteration: 1630 loss: 0.0188 lr: 0.005
+2022-03-07 19:24:59 iteration: 1640 loss: 0.0196 lr: 0.005
+2022-03-07 19:25:01 iteration: 1650 loss: 0.0180 lr: 0.005
+2022-03-07 19:25:04 iteration: 1660 loss: 0.0174 lr: 0.005
+2022-03-07 19:25:06 iteration: 1670 loss: 0.0188 lr: 0.005
+2022-03-07 19:25:08 iteration: 1680 loss: 0.0182 lr: 0.005
+2022-03-07 19:25:10 iteration: 1690 loss: 0.0171 lr: 0.005
+2022-03-07 19:25:13 iteration: 1700 loss: 0.0172 lr: 0.005
+2022-03-07 19:25:15 iteration: 1710 loss: 0.0189 lr: 0.005
+2022-03-07 19:25:18 iteration: 1720 loss: 0.0190 lr: 0.005
+2022-03-07 19:25:20 iteration: 1730 loss: 0.0186 lr: 0.005
+2022-03-07 19:25:22 iteration: 1740 loss: 0.0175 lr: 0.005
+2022-03-07 19:25:24 iteration: 1750 loss: 0.0176 lr: 0.005
+2022-03-07 19:25:27 iteration: 1760 loss: 0.0209 lr: 0.005
+2022-03-07 19:25:29 iteration: 1770 loss: 0.0157 lr: 0.005
+2022-03-07 19:25:31 iteration: 1780 loss: 0.0173 lr: 0.005
+2022-03-07 19:25:33 iteration: 1790 loss: 0.0157 lr: 0.005
+2022-03-07 19:25:36 iteration: 1800 loss: 0.0174 lr: 0.005
+2022-03-07 19:25:38 iteration: 1810 loss: 0.0166 lr: 0.005
+2022-03-07 19:25:40 iteration: 1820 loss: 0.0192 lr: 0.005
+2022-03-07 19:25:42 iteration: 1830 loss: 0.0162 lr: 0.005
+2022-03-07 19:25:45 iteration: 1840 loss: 0.0177 lr: 0.005
+2022-03-07 19:25:47 iteration: 1850 loss: 0.0182 lr: 0.005
+2022-03-07 19:25:49 iteration: 1860 loss: 0.0177 lr: 0.005
+2022-03-07 19:25:51 iteration: 1870 loss: 0.0173 lr: 0.005
+2022-03-07 19:25:54 iteration: 1880 loss: 0.0179 lr: 0.005
+2022-03-07 19:25:56 iteration: 1890 loss: 0.0191 lr: 0.005
+2022-03-07 19:25:59 iteration: 1900 loss: 0.0157 lr: 0.005
+2022-03-07 19:26:01 iteration: 1910 loss: 0.0157 lr: 0.005
+2022-03-07 19:26:03 iteration: 1920 loss: 0.0165 lr: 0.005
+2022-03-07 19:26:05 iteration: 1930 loss: 0.0171 lr: 0.005
+2022-03-07 19:26:07 iteration: 1940 loss: 0.0160 lr: 0.005
+2022-03-07 19:26:09 iteration: 1950 loss: 0.0172 lr: 0.005
+2022-03-07 19:26:12 iteration: 1960 loss: 0.0150 lr: 0.005
+2022-03-07 19:26:14 iteration: 1970 loss: 0.0162 lr: 0.005
+2022-03-07 19:26:16 iteration: 1980 loss: 0.0166 lr: 0.005
+2022-03-07 19:26:19 iteration: 1990 loss: 0.0175 lr: 0.005
+2022-03-07 19:26:21 iteration: 2000 loss: 0.0173 lr: 0.005
+2022-03-07 19:26:24 iteration: 2010 loss: 0.0147 lr: 0.005
+2022-03-07 19:26:26 iteration: 2020 loss: 0.0174 lr: 0.005
+2022-03-07 19:26:28 iteration: 2030 loss: 0.0156 lr: 0.005
+2022-03-07 19:26:30 iteration: 2040 loss: 0.0154 lr: 0.005
+2022-03-07 19:26:32 iteration: 2050 loss: 0.0148 lr: 0.005
+2022-03-07 19:26:35 iteration: 2060 loss: 0.0168 lr: 0.005
+2022-03-07 19:26:37 iteration: 2070 loss: 0.0172 lr: 0.005
+2022-03-07 19:26:39 iteration: 2080 loss: 0.0166 lr: 0.005
+2022-03-07 19:26:41 iteration: 2090 loss: 0.0185 lr: 0.005
+2022-03-07 19:26:44 iteration: 2100 loss: 0.0178 lr: 0.005
+2022-03-07 19:26:46 iteration: 2110 loss: 0.0150 lr: 0.005
+2022-03-07 19:26:48 iteration: 2120 loss: 0.0170 lr: 0.005
+2022-03-07 19:26:51 iteration: 2130 loss: 0.0158 lr: 0.005
+2022-03-07 19:26:53 iteration: 2140 loss: 0.0160 lr: 0.005
+2022-03-07 19:26:55 iteration: 2150 loss: 0.0158 lr: 0.005
+2022-03-07 19:26:58 iteration: 2160 loss: 0.0168 lr: 0.005
+2022-03-07 19:27:00 iteration: 2170 loss: 0.0148 lr: 0.005
+2022-03-07 19:27:02 iteration: 2180 loss: 0.0163 lr: 0.005
+2022-03-07 19:27:04 iteration: 2190 loss: 0.0165 lr: 0.005
+2022-03-07 19:27:06 iteration: 2200 loss: 0.0142 lr: 0.005
+2022-03-07 19:27:09 iteration: 2210 loss: 0.0170 lr: 0.005
+2022-03-07 19:27:11 iteration: 2220 loss: 0.0156 lr: 0.005
+2022-03-07 19:27:13 iteration: 2230 loss: 0.0141 lr: 0.005
+2022-03-07 19:27:15 iteration: 2240 loss: 0.0159 lr: 0.005
+2022-03-07 19:27:17 iteration: 2250 loss: 0.0150 lr: 0.005
+2022-03-07 19:27:19 iteration: 2260 loss: 0.0172 lr: 0.005
+2022-03-07 19:27:21 iteration: 2270 loss: 0.0163 lr: 0.005
+2022-03-07 19:27:24 iteration: 2280 loss: 0.0174 lr: 0.005
+2022-03-07 19:27:26 iteration: 2290 loss: 0.0135 lr: 0.005
+2022-03-07 19:27:27 iteration: 2300 loss: 0.0136 lr: 0.005
+2022-03-07 19:27:29 iteration: 2310 loss: 0.0145 lr: 0.005
+2022-03-07 19:27:32 iteration: 2320 loss: 0.0163 lr: 0.005
+2022-03-07 19:27:34 iteration: 2330 loss: 0.0146 lr: 0.005
+2022-03-07 19:27:37 iteration: 2340 loss: 0.0161 lr: 0.005
+2022-03-07 19:27:39 iteration: 2350 loss: 0.0162 lr: 0.005
+2022-03-07 19:27:41 iteration: 2360 loss: 0.0146 lr: 0.005
+2022-03-07 19:27:44 iteration: 2370 loss: 0.0167 lr: 0.005
+2022-03-07 19:27:46 iteration: 2380 loss: 0.0139 lr: 0.005
+2022-03-07 19:27:48 iteration: 2390 loss: 0.0157 lr: 0.005
+2022-03-07 19:27:50 iteration: 2400 loss: 0.0165 lr: 0.005
+2022-03-07 19:27:53 iteration: 2410 loss: 0.0182 lr: 0.005
+2022-03-07 19:27:55 iteration: 2420 loss: 0.0172 lr: 0.005
+2022-03-07 19:27:58 iteration: 2430 loss: 0.0188 lr: 0.005
+2022-03-07 19:28:00 iteration: 2440 loss: 0.0147 lr: 0.005
+2022-03-07 19:28:02 iteration: 2450 loss: 0.0138 lr: 0.005
+2022-03-07 19:28:04 iteration: 2460 loss: 0.0160 lr: 0.005
+2022-03-07 19:28:07 iteration: 2470 loss: 0.0136 lr: 0.005
+2022-03-07 19:28:09 iteration: 2480 loss: 0.0170 lr: 0.005
+2022-03-07 19:28:11 iteration: 2490 loss: 0.0145 lr: 0.005
+2022-03-07 19:28:14 iteration: 2500 loss: 0.0162 lr: 0.005
+2022-03-07 19:28:17 iteration: 2510 loss: 0.0166 lr: 0.005
+2022-03-07 19:28:19 iteration: 2520 loss: 0.0155 lr: 0.005
+2022-03-07 19:28:21 iteration: 2530 loss: 0.0142 lr: 0.005
+2022-03-07 19:28:23 iteration: 2540 loss: 0.0139 lr: 0.005
+2022-03-07 19:28:26 iteration: 2550 loss: 0.0161 lr: 0.005
+2022-03-07 19:28:28 iteration: 2560 loss: 0.0136 lr: 0.005
+2022-03-07 19:28:29 iteration: 2570 loss: 0.0134 lr: 0.005
+2022-03-07 19:28:32 iteration: 2580 loss: 0.0157 lr: 0.005
+2022-03-07 19:28:34 iteration: 2590 loss: 0.0163 lr: 0.005
+2022-03-07 19:28:36 iteration: 2600 loss: 0.0136 lr: 0.005
+2022-03-07 19:28:38 iteration: 2610 loss: 0.0130 lr: 0.005
+2022-03-07 19:28:41 iteration: 2620 loss: 0.0159 lr: 0.005
+2022-03-07 19:28:43 iteration: 2630 loss: 0.0143 lr: 0.005
+2022-03-07 19:28:45 iteration: 2640 loss: 0.0130 lr: 0.005
+2022-03-07 19:28:47 iteration: 2650 loss: 0.0142 lr: 0.005
+2022-03-07 19:28:49 iteration: 2660 loss: 0.0160 lr: 0.005
+2022-03-07 19:28:52 iteration: 2670 loss: 0.0134 lr: 0.005
+2022-03-07 19:28:53 iteration: 2680 loss: 0.0119 lr: 0.005
+2022-03-07 19:28:56 iteration: 2690 loss: 0.0150 lr: 0.005
+2022-03-07 19:28:58 iteration: 2700 loss: 0.0155 lr: 0.005
+2022-03-07 19:29:01 iteration: 2710 loss: 0.0154 lr: 0.005
+2022-03-07 19:29:03 iteration: 2720 loss: 0.0134 lr: 0.005
+2022-03-07 19:29:05 iteration: 2730 loss: 0.0151 lr: 0.005
+2022-03-07 19:29:08 iteration: 2740 loss: 0.0171 lr: 0.005
+2022-03-07 19:29:10 iteration: 2750 loss: 0.0152 lr: 0.005
+2022-03-07 19:29:12 iteration: 2760 loss: 0.0158 lr: 0.005
+2022-03-07 19:29:15 iteration: 2770 loss: 0.0146 lr: 0.005
+2022-03-07 19:29:17 iteration: 2780 loss: 0.0146 lr: 0.005
+2022-03-07 19:29:19 iteration: 2790 loss: 0.0132 lr: 0.005
+2022-03-07 19:29:21 iteration: 2800 loss: 0.0153 lr: 0.005
+2022-03-07 19:29:23 iteration: 2810 loss: 0.0129 lr: 0.005
+2022-03-07 19:29:25 iteration: 2820 loss: 0.0130 lr: 0.005
+2022-03-07 19:29:27 iteration: 2830 loss: 0.0142 lr: 0.005
+2022-03-07 19:29:30 iteration: 2840 loss: 0.0131 lr: 0.005
+2022-03-07 19:29:32 iteration: 2850 loss: 0.0135 lr: 0.005
+2022-03-07 19:29:34 iteration: 2860 loss: 0.0144 lr: 0.005
+2022-03-07 19:29:36 iteration: 2870 loss: 0.0133 lr: 0.005
+2022-03-07 19:29:39 iteration: 2880 loss: 0.0145 lr: 0.005
+2022-03-07 19:29:41 iteration: 2890 loss: 0.0141 lr: 0.005
+2022-03-07 19:29:43 iteration: 2900 loss: 0.0129 lr: 0.005
+2022-03-07 19:29:46 iteration: 2910 loss: 0.0132 lr: 0.005
+2022-03-07 19:29:48 iteration: 2920 loss: 0.0129 lr: 0.005
+2022-03-07 19:29:50 iteration: 2930 loss: 0.0138 lr: 0.005
+2022-03-07 19:29:52 iteration: 2940 loss: 0.0142 lr: 0.005
+2022-03-07 19:29:55 iteration: 2950 loss: 0.0157 lr: 0.005
+2022-03-07 19:29:57 iteration: 2960 loss: 0.0154 lr: 0.005
+2022-03-07 19:30:00 iteration: 2970 loss: 0.0161 lr: 0.005
+2022-03-07 19:30:02 iteration: 2980 loss: 0.0133 lr: 0.005
+2022-03-07 19:30:04 iteration: 2990 loss: 0.0125 lr: 0.005
+2022-03-07 19:30:07 iteration: 3000 loss: 0.0149 lr: 0.005
+2022-03-07 19:30:09 iteration: 3010 loss: 0.0150 lr: 0.005
+2022-03-07 19:30:12 iteration: 3020 loss: 0.0149 lr: 0.005
+2022-03-07 19:30:14 iteration: 3030 loss: 0.0140 lr: 0.005
+2022-03-07 19:30:17 iteration: 3040 loss: 0.0137 lr: 0.005
+2022-03-07 19:30:19 iteration: 3050 loss: 0.0123 lr: 0.005
+2022-03-07 19:30:21 iteration: 3060 loss: 0.0135 lr: 0.005
+2022-03-07 19:30:23 iteration: 3070 loss: 0.0127 lr: 0.005
+2022-03-07 19:30:26 iteration: 3080 loss: 0.0146 lr: 0.005
+2022-03-07 19:30:28 iteration: 3090 loss: 0.0138 lr: 0.005
+2022-03-07 19:30:30 iteration: 3100 loss: 0.0132 lr: 0.005
+2022-03-07 19:30:33 iteration: 3110 loss: 0.0168 lr: 0.005
+2022-03-07 19:30:35 iteration: 3120 loss: 0.0140 lr: 0.005
+2022-03-07 19:30:38 iteration: 3130 loss: 0.0136 lr: 0.005
+2022-03-07 19:30:40 iteration: 3140 loss: 0.0146 lr: 0.005
+2022-03-07 19:30:42 iteration: 3150 loss: 0.0127 lr: 0.005
+2022-03-07 19:30:44 iteration: 3160 loss: 0.0127 lr: 0.005
+2022-03-07 19:30:47 iteration: 3170 loss: 0.0133 lr: 0.005
+2022-03-07 19:30:49 iteration: 3180 loss: 0.0135 lr: 0.005
+2022-03-07 19:30:51 iteration: 3190 loss: 0.0136 lr: 0.005
+2022-03-07 19:30:54 iteration: 3200 loss: 0.0147 lr: 0.005
+2022-03-07 19:30:56 iteration: 3210 loss: 0.0138 lr: 0.005
+2022-03-07 19:30:58 iteration: 3220 loss: 0.0141 lr: 0.005
+2022-03-07 19:31:01 iteration: 3230 loss: 0.0138 lr: 0.005
+2022-03-07 19:31:03 iteration: 3240 loss: 0.0135 lr: 0.005
+2022-03-07 19:31:05 iteration: 3250 loss: 0.0128 lr: 0.005
+2022-03-07 19:31:08 iteration: 3260 loss: 0.0146 lr: 0.005
+2022-03-07 19:31:10 iteration: 3270 loss: 0.0140 lr: 0.005
+2022-03-07 19:31:12 iteration: 3280 loss: 0.0123 lr: 0.005
+2022-03-07 19:31:14 iteration: 3290 loss: 0.0139 lr: 0.005
+2022-03-07 19:31:17 iteration: 3300 loss: 0.0129 lr: 0.005
+2022-03-07 19:31:19 iteration: 3310 loss: 0.0125 lr: 0.005
+2022-03-07 19:31:21 iteration: 3320 loss: 0.0150 lr: 0.005
+2022-03-07 19:31:23 iteration: 3330 loss: 0.0119 lr: 0.005
+2022-03-07 19:31:26 iteration: 3340 loss: 0.0145 lr: 0.005
+2022-03-07 19:31:29 iteration: 3350 loss: 0.0149 lr: 0.005
+2022-03-07 19:31:31 iteration: 3360 loss: 0.0125 lr: 0.005
+2022-03-07 19:31:33 iteration: 3370 loss: 0.0129 lr: 0.005
+2022-03-07 19:31:35 iteration: 3380 loss: 0.0121 lr: 0.005
+2022-03-07 19:31:37 iteration: 3390 loss: 0.0115 lr: 0.005
+2022-03-07 19:31:39 iteration: 3400 loss: 0.0120 lr: 0.005
+2022-03-07 19:31:41 iteration: 3410 loss: 0.0127 lr: 0.005
+2022-03-07 19:31:44 iteration: 3420 loss: 0.0142 lr: 0.005
+2022-03-07 19:31:46 iteration: 3430 loss: 0.0137 lr: 0.005
+2022-03-07 19:31:48 iteration: 3440 loss: 0.0125 lr: 0.005
+2022-03-07 19:31:50 iteration: 3450 loss: 0.0142 lr: 0.005
+2022-03-07 19:31:52 iteration: 3460 loss: 0.0142 lr: 0.005
+2022-03-07 19:31:54 iteration: 3470 loss: 0.0117 lr: 0.005
+2022-03-07 19:31:57 iteration: 3480 loss: 0.0131 lr: 0.005
+2022-03-07 19:31:59 iteration: 3490 loss: 0.0132 lr: 0.005
+2022-03-07 19:32:01 iteration: 3500 loss: 0.0124 lr: 0.005
+2022-03-07 19:32:04 iteration: 3510 loss: 0.0137 lr: 0.005
+2022-03-07 19:32:06 iteration: 3520 loss: 0.0122 lr: 0.005
+2022-03-07 19:32:08 iteration: 3530 loss: 0.0130 lr: 0.005
+2022-03-07 19:32:11 iteration: 3540 loss: 0.0142 lr: 0.005
+2022-03-07 19:32:12 iteration: 3550 loss: 0.0123 lr: 0.005
+2022-03-07 19:32:14 iteration: 3560 loss: 0.0129 lr: 0.005
+2022-03-07 19:32:16 iteration: 3570 loss: 0.0120 lr: 0.005
+2022-03-07 19:32:18 iteration: 3580 loss: 0.0119 lr: 0.005
+2022-03-07 19:32:20 iteration: 3590 loss: 0.0121 lr: 0.005
+2022-03-07 19:32:23 iteration: 3600 loss: 0.0137 lr: 0.005
+2022-03-07 19:32:25 iteration: 3610 loss: 0.0118 lr: 0.005
+2022-03-07 19:32:27 iteration: 3620 loss: 0.0124 lr: 0.005
+2022-03-07 19:32:29 iteration: 3630 loss: 0.0121 lr: 0.005
+2022-03-07 19:32:32 iteration: 3640 loss: 0.0133 lr: 0.005
+2022-03-07 19:32:34 iteration: 3650 loss: 0.0130 lr: 0.005
+2022-03-07 19:32:36 iteration: 3660 loss: 0.0129 lr: 0.005
+2022-03-07 19:32:39 iteration: 3670 loss: 0.0156 lr: 0.005
+2022-03-07 19:32:42 iteration: 3680 loss: 0.0131 lr: 0.005
+2022-03-07 19:32:44 iteration: 3690 loss: 0.0130 lr: 0.005
+2022-03-07 19:32:47 iteration: 3700 loss: 0.0157 lr: 0.005
+2022-03-07 19:32:49 iteration: 3710 loss: 0.0121 lr: 0.005
+2022-03-07 19:32:51 iteration: 3720 loss: 0.0127 lr: 0.005
+2022-03-07 19:32:53 iteration: 3730 loss: 0.0120 lr: 0.005
+2022-03-07 19:32:56 iteration: 3740 loss: 0.0143 lr: 0.005
+2022-03-07 19:32:58 iteration: 3750 loss: 0.0119 lr: 0.005
+2022-03-07 19:33:00 iteration: 3760 loss: 0.0122 lr: 0.005
+2022-03-07 19:33:02 iteration: 3770 loss: 0.0113 lr: 0.005
+2022-03-07 19:33:05 iteration: 3780 loss: 0.0114 lr: 0.005
+2022-03-07 19:33:08 iteration: 3790 loss: 0.0152 lr: 0.005
+2022-03-07 19:33:10 iteration: 3800 loss: 0.0131 lr: 0.005
+2022-03-07 19:33:12 iteration: 3810 loss: 0.0116 lr: 0.005
+2022-03-07 19:33:15 iteration: 3820 loss: 0.0128 lr: 0.005
+2022-03-07 19:33:17 iteration: 3830 loss: 0.0125 lr: 0.005
+2022-03-07 19:33:20 iteration: 3840 loss: 0.0131 lr: 0.005
+2022-03-07 19:33:22 iteration: 3850 loss: 0.0130 lr: 0.005
+2022-03-07 19:33:24 iteration: 3860 loss: 0.0127 lr: 0.005
+2022-03-07 19:33:27 iteration: 3870 loss: 0.0137 lr: 0.005
+2022-03-07 19:33:29 iteration: 3880 loss: 0.0132 lr: 0.005
+2022-03-07 19:33:31 iteration: 3890 loss: 0.0118 lr: 0.005
+2022-03-07 19:33:34 iteration: 3900 loss: 0.0132 lr: 0.005
+2022-03-07 19:33:36 iteration: 3910 loss: 0.0138 lr: 0.005
+2022-03-07 19:33:38 iteration: 3920 loss: 0.0127 lr: 0.005
+2022-03-07 19:33:40 iteration: 3930 loss: 0.0120 lr: 0.005
+2022-03-07 19:33:42 iteration: 3940 loss: 0.0130 lr: 0.005
+2022-03-07 19:33:44 iteration: 3950 loss: 0.0116 lr: 0.005
+2022-03-07 19:33:47 iteration: 3960 loss: 0.0125 lr: 0.005
+2022-03-07 19:33:49 iteration: 3970 loss: 0.0138 lr: 0.005
+2022-03-07 19:33:52 iteration: 3980 loss: 0.0120 lr: 0.005
+2022-03-07 19:33:54 iteration: 3990 loss: 0.0129 lr: 0.005
+2022-03-07 19:33:57 iteration: 4000 loss: 0.0118 lr: 0.005
+2022-03-07 19:33:59 iteration: 4010 loss: 0.0107 lr: 0.005
+2022-03-07 19:34:02 iteration: 4020 loss: 0.0122 lr: 0.005
+2022-03-07 19:34:04 iteration: 4030 loss: 0.0119 lr: 0.005
+2022-03-07 19:34:06 iteration: 4040 loss: 0.0121 lr: 0.005
+2022-03-07 19:34:09 iteration: 4050 loss: 0.0124 lr: 0.005
+2022-03-07 19:34:11 iteration: 4060 loss: 0.0132 lr: 0.005
+2022-03-07 19:34:14 iteration: 4070 loss: 0.0142 lr: 0.005
+2022-03-07 19:34:16 iteration: 4080 loss: 0.0112 lr: 0.005
+2022-03-07 19:34:18 iteration: 4090 loss: 0.0114 lr: 0.005
+2022-03-07 19:34:21 iteration: 4100 loss: 0.0135 lr: 0.005
+2022-03-07 19:34:23 iteration: 4110 loss: 0.0127 lr: 0.005
+2022-03-07 19:34:25 iteration: 4120 loss: 0.0117 lr: 0.005
+2022-03-07 19:34:27 iteration: 4130 loss: 0.0112 lr: 0.005
+2022-03-07 19:34:29 iteration: 4140 loss: 0.0130 lr: 0.005
+2022-03-07 19:34:32 iteration: 4150 loss: 0.0112 lr: 0.005
+2022-03-07 19:34:34 iteration: 4160 loss: 0.0114 lr: 0.005
+2022-03-07 19:34:36 iteration: 4170 loss: 0.0124 lr: 0.005
+2022-03-07 19:34:38 iteration: 4180 loss: 0.0113 lr: 0.005
+2022-03-07 19:34:40 iteration: 4190 loss: 0.0111 lr: 0.005
+2022-03-07 19:34:43 iteration: 4200 loss: 0.0111 lr: 0.005
+2022-03-07 19:34:45 iteration: 4210 loss: 0.0130 lr: 0.005
+2022-03-07 19:34:47 iteration: 4220 loss: 0.0111 lr: 0.005
+2022-03-07 19:34:50 iteration: 4230 loss: 0.0118 lr: 0.005
+2022-03-07 19:34:52 iteration: 4240 loss: 0.0114 lr: 0.005
+2022-03-07 19:34:54 iteration: 4250 loss: 0.0110 lr: 0.005
+2022-03-07 19:34:57 iteration: 4260 loss: 0.0129 lr: 0.005
+2022-03-07 19:34:59 iteration: 4270 loss: 0.0124 lr: 0.005
+2022-03-07 19:35:01 iteration: 4280 loss: 0.0116 lr: 0.005
+2022-03-07 19:35:04 iteration: 4290 loss: 0.0123 lr: 0.005
+2022-03-07 19:35:06 iteration: 4300 loss: 0.0116 lr: 0.005
+2022-03-07 19:35:08 iteration: 4310 loss: 0.0109 lr: 0.005
+2022-03-07 19:35:10 iteration: 4320 loss: 0.0112 lr: 0.005
+2022-03-07 19:35:13 iteration: 4330 loss: 0.0113 lr: 0.005
+2022-03-07 19:35:15 iteration: 4340 loss: 0.0123 lr: 0.005
+2022-03-07 19:35:17 iteration: 4350 loss: 0.0110 lr: 0.005
+2022-03-07 19:35:19 iteration: 4360 loss: 0.0105 lr: 0.005
+2022-03-07 19:35:21 iteration: 4370 loss: 0.0121 lr: 0.005
+2022-03-07 19:35:24 iteration: 4380 loss: 0.0128 lr: 0.005
+2022-03-07 19:35:26 iteration: 4390 loss: 0.0116 lr: 0.005
+2022-03-07 19:35:28 iteration: 4400 loss: 0.0115 lr: 0.005
+2022-03-07 19:35:30 iteration: 4410 loss: 0.0115 lr: 0.005
+2022-03-07 19:35:33 iteration: 4420 loss: 0.0117 lr: 0.005
+2022-03-07 19:35:35 iteration: 4430 loss: 0.0116 lr: 0.005
+2022-03-07 19:35:37 iteration: 4440 loss: 0.0106 lr: 0.005
+2022-03-07 19:35:40 iteration: 4450 loss: 0.0094 lr: 0.005
+2022-03-07 19:35:42 iteration: 4460 loss: 0.0112 lr: 0.005
+2022-03-07 19:35:44 iteration: 4470 loss: 0.0123 lr: 0.005
+2022-03-07 19:35:46 iteration: 4480 loss: 0.0131 lr: 0.005
+2022-03-07 19:35:48 iteration: 4490 loss: 0.0116 lr: 0.005
+2022-03-07 19:35:51 iteration: 4500 loss: 0.0130 lr: 0.005
+2022-03-07 19:35:54 iteration: 4510 loss: 0.0106 lr: 0.005
+2022-03-07 19:35:56 iteration: 4520 loss: 0.0116 lr: 0.005
+2022-03-07 19:35:58 iteration: 4530 loss: 0.0114 lr: 0.005
+2022-03-07 19:36:01 iteration: 4540 loss: 0.0110 lr: 0.005
+2022-03-07 19:36:03 iteration: 4550 loss: 0.0123 lr: 0.005
+2022-03-07 19:36:06 iteration: 4560 loss: 0.0115 lr: 0.005
+2022-03-07 19:36:08 iteration: 4570 loss: 0.0111 lr: 0.005
+2022-03-07 19:36:10 iteration: 4580 loss: 0.0102 lr: 0.005
+2022-03-07 19:36:12 iteration: 4590 loss: 0.0121 lr: 0.005
+2022-03-07 19:36:14 iteration: 4600 loss: 0.0107 lr: 0.005
+2022-03-07 19:36:17 iteration: 4610 loss: 0.0121 lr: 0.005
+2022-03-07 19:36:19 iteration: 4620 loss: 0.0119 lr: 0.005
+2022-03-07 19:36:21 iteration: 4630 loss: 0.0114 lr: 0.005
+2022-03-07 19:36:23 iteration: 4640 loss: 0.0115 lr: 0.005
+2022-03-07 19:36:26 iteration: 4650 loss: 0.0114 lr: 0.005
+2022-03-07 19:36:28 iteration: 4660 loss: 0.0129 lr: 0.005
+2022-03-07 19:36:30 iteration: 4670 loss: 0.0116 lr: 0.005
+2022-03-07 19:36:32 iteration: 4680 loss: 0.0134 lr: 0.005
+2022-03-07 19:36:35 iteration: 4690 loss: 0.0117 lr: 0.005
+2022-03-07 19:36:37 iteration: 4700 loss: 0.0132 lr: 0.005
+2022-03-07 19:36:39 iteration: 4710 loss: 0.0109 lr: 0.005
+2022-03-07 19:36:42 iteration: 4720 loss: 0.0097 lr: 0.005
+2022-03-07 19:36:44 iteration: 4730 loss: 0.0108 lr: 0.005
+2022-03-07 19:36:46 iteration: 4740 loss: 0.0101 lr: 0.005
+2022-03-07 19:36:48 iteration: 4750 loss: 0.0109 lr: 0.005
+2022-03-07 19:36:51 iteration: 4760 loss: 0.0111 lr: 0.005
+2022-03-07 19:36:53 iteration: 4770 loss: 0.0129 lr: 0.005
+2022-03-07 19:36:56 iteration: 4780 loss: 0.0113 lr: 0.005
+2022-03-07 19:36:58 iteration: 4790 loss: 0.0127 lr: 0.005
+2022-03-07 19:37:00 iteration: 4800 loss: 0.0120 lr: 0.005
+2022-03-07 19:37:03 iteration: 4810 loss: 0.0120 lr: 0.005
+2022-03-07 19:37:05 iteration: 4820 loss: 0.0121 lr: 0.005
+2022-03-07 19:37:13 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15]],
+ 'all_joints_names': ['p_left_wrist',
+                      'p_right_wrist',
+                      'p_left_elbow',
+                      'p_right_elbow',
+                      'p_left_shoulder',
+                      'p_right_shoulder',
+                      'p_neck',
+                      'p_waist',
+                      't_left_wrist',
+                      't_right_wrist',
+                      't_left_elbow',
+                      't_right_elbow',
+                      't_left_shoulder',
+                      't_right_shoulder',
+                      't_neck',
+                      't_waist'],
+ 'batch_size': 1,
+ 'crop_pad': 0,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_car_wash_small_markerJan11/car_wash_small_marker_raimasen95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'deterministic': False,
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'init_weights': '/usr/local/lib/python3.7/dist-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 1.0,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'mirror': False,
+ 'net_type': 'resnet_50',
+ 'num_joints': 16,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': True,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'regularize': False,
+ 'scoremap_dir': 'test',
+ 'shuffle': True,
+ 'snapshot_prefix': '/content/drive/My '
+                    'Drive/DLC/dlc-models/iteration-0/car_wash_small_markerJan11-trainset95shuffle1/test/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}
+2022-03-07 20:23:48 Config:
+{'all_joints': [[0],
+                [1],
+                [2],
+                [3],
+                [4],
+                [5],
+                [6],
+                [7],
+                [8],
+                [9],
+                [10],
+                [11],
+                [12],
+                [13],
+                [14],
+                [15]],
+ 'all_joints_names': ['p_left_wrist',
+                      'p_right_wrist',
+                      'p_left_elbow',
+                      'p_right_elbow',
+                      'p_left_shoulder',
+                      'p_right_shoulder',
+                      'p_neck',
+                      'p_waist',
+                      't_left_wrist',
+                      't_right_wrist',
+                      't_left_elbow',
+                      't_right_elbow',
+                      't_left_shoulder',
+                      't_right_shoulder',
+                      't_neck',
+                      't_waist'],
+ 'alpha_r': 0.02,
+ 'apply_prob': 0.5,
+ 'batch_size': 1,
+ 'clahe': True,
+ 'claheratio': 0.1,
+ 'crop_pad': 0,
+ 'crop_sampling': 'hybrid',
+ 'crop_size': [400, 400],
+ 'cropratio': 0.4,
+ 'dataset': 'training-datasets/iteration-0/UnaugmentedDataSet_car_wash_small_markerJan11/car_wash_small_marker_raimasen95shuffle1.mat',
+ 'dataset_type': 'imgaug',
+ 'decay_steps': 30000,
+ 'deterministic': False,
+ 'display_iters': 1000,
+ 'edge': False,
+ 'emboss': {'alpha': [0.0, 1.0], 'embossratio': 0.1, 'strength': [0.5, 1.5]},
+ 'fg_fraction': 0.25,
+ 'global_scale': 0.8,
+ 'histeq': True,
+ 'histeqratio': 0.1,
+ 'init_weights': '/usr/local/lib/python3.7/dist-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt',
+ 'intermediate_supervision': False,
+ 'intermediate_supervision_layer': 12,
+ 'location_refinement': True,
+ 'locref_huber_loss': True,
+ 'locref_loss_weight': 0.05,
+ 'locref_stdev': 7.2801,
+ 'log_dir': 'log',
+ 'lr_init': 0.0005,
+ 'max_input_size': 1500,
+ 'max_shift': 0.4,
+ 'mean_pixel': [123.68, 116.779, 103.939],
+ 'metadataset': 'training-datasets/iteration-0/UnaugmentedDataSet_car_wash_small_markerJan11/Documentation_data-car_wash_small_marker_95shuffle1.pickle',
+ 'min_input_size': 64,
+ 'mirror': False,
+ 'multi_stage': False,
+ 'multi_step': [[0.005, 10000],
+                [0.02, 430000],
+                [0.002, 730000],
+                [0.001, 1030000]],
+ 'net_type': 'resnet_50',
+ 'num_joints': 16,
+ 'optimizer': 'sgd',
+ 'pairwise_huber_loss': False,
+ 'pairwise_predict': False,
+ 'partaffinityfield_predict': False,
+ 'pos_dist_thresh': 17,
+ 'pre_resize': [],
+ 'project_path': '/content/drive/My Drive/DLC',
+ 'regularize': False,
+ 'rotation': 25,
+ 'rotratio': 0.4,
+ 'save_iters': 50000,
+ 'scale_jitter_lo': 0.5,
+ 'scale_jitter_up': 1.25,
+ 'scoremap_dir': 'test',
+ 'sharpen': False,
+ 'sharpenratio': 0.3,
+ 'shuffle': True,
+ 'snapshot_prefix': '/content/drive/My '
+                    'Drive/DLC/dlc-models/iteration-0/car_wash_small_markerJan11-trainset95shuffle1/train/snapshot',
+ 'stride': 8.0,
+ 'weigh_negatives': False,
+ 'weigh_only_present_joints': False,
+ 'weigh_part_predictions': False,
+ 'weight_decay': 0.0001}

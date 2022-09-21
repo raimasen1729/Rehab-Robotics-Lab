@@ -1,0 +1,79 @@
+all_joints:
+- [0]
+- [1]
+- [2]
+- [3]
+- [4]
+- [5]
+- [6]
+- [7]
+- [8]
+- [9]
+- [10]
+- [11]
+- [12]
+- [13]
+- [14]
+- [15]
+- [16]
+- [17]
+- [18]
+- [19]
+all_joints_names: [p_left_wrist, p_right_wrist, p_left_elbow, p_right_elbow, p_left_shoulder,
+  p_right_shoulder, p_neck, p_waist, p_left_leg, p_right_leg, t_left_wrist, t_right_wrist,
+  t_left_elbow, t_right_elbow, t_left_shoulder, t_right_shoulder, t_neck, t_waist,
+  t_left_leg, t_right_leg]
+alpha_r: 0.02
+apply_prob: 0.5
+batch_size: 1
+clahe: true
+claheratio: 0.1
+crop_sampling: hybrid
+crop_size: [400, 400]
+cropratio: 0.4
+dataset: training-datasets/iteration-0/UnaugmentedDataSet_sweeping_small_markersJan16/sweeping_small_markers_raimasen95shuffle1.mat
+dataset_type: imgaug
+decay_steps: 30000
+display_iters: 1000
+edge: false
+emboss:
+  alpha: [0.0, 1.0]
+  embossratio: 0.1
+  strength: [0.5, 1.5]
+global_scale: 0.8
+histeq: true
+histeqratio: 0.1
+init_weights: /usr/local/lib/python3.7/dist-packages/deeplabcut/pose_estimation_tensorflow/models/pretrained/resnet_v1_50.ckpt
+intermediate_supervision: false
+intermediate_supervision_layer: 12
+location_refinement: true
+locref_huber_loss: true
+locref_loss_weight: 0.05
+locref_stdev: 7.2801
+lr_init: 0.0005
+max_input_size: 1500
+max_shift: 0.4
+metadataset: training-datasets/iteration-0/UnaugmentedDataSet_sweeping_small_markersJan16/Documentation_data-sweeping_small_markers_95shuffle1.pickle
+min_input_size: 64
+mirror: false
+multi_stage: false
+multi_step:
+- [0.005, 10000]
+- [0.02, 430000]
+- [0.002, 730000]
+- [0.001, 1030000]
+net_type: resnet_50
+num_joints: 20
+pairwise_huber_loss: false
+pairwise_predict: false
+partaffinityfield_predict: false
+pos_dist_thresh: 17
+pre_resize: []
+project_path: /content/drive/My Drive/sweeping2_csv_generation
+rotation: 25
+rotratio: 0.4
+save_iters: 50000
+scale_jitter_lo: 0.5
+scale_jitter_up: 1.25
+sharpen: false
+sharpenratio: 0.3
