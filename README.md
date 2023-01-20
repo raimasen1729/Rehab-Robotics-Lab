@@ -1,4 +1,4 @@
-# Rehab-Robotics-Lab
+# Vision and Learning for Automatic Patient-Therapist Interaction Classification and Data Analysis
 
 Using DeepLabCut marker annotations to retrain OpenPose Output - <br>
 
